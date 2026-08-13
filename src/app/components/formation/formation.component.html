@@ -1,0 +1,20 @@
+<section id="formation">
+  <div class="container">
+    <h2>Formation</h2>
+
+    <ol class="timeline">
+      @for (f of formations; track f.school) {
+        <li>
+          <div class="tl-period">{{ f.period }}</div>
+          <div class="tl-body">
+            <h4>
+              <a [href]="f.url" target="_blank" rel="noopener">{{ f.school }}</a>
+            </h4>
+            <p class="degree">{{ f.degree }}</p>
+            <p class="org">{{ f.location }}</p>
+          </div>
+        </li>
+      }
+    </ol>
+  </div>
+</section>

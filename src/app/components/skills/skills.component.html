@@ -1,0 +1,18 @@
+<section id="skills">
+  <div class="container">
+    <h2>Compétences</h2>
+
+    <div class="groups">
+      @for (group of groups; track group.label) {
+        <div class="group">
+          <span class="label">{{ group.label }}</span>
+          <div class="items">
+            @for (item of group.items; track item) {
+              <span class="tag">{{ item }}</span>
+            }
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>

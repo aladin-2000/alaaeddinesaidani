@@ -1,0 +1,18 @@
+<nav [class.scrolled]="scrolled()">
+  <div class="container bar">
+    <a href="#top" class="mark">AES<span>.dev</span></a>
+
+    <button class="burger" (click)="open.set(!open())" [attr.aria-expanded]="open()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul [class.open]="open()">
+      <li><a href="#about" (click)="open.set(false)">Profil</a></li>
+      <li><a href="#experience" (click)="open.set(false)">Expérience</a></li>
+      <li><a href="#skills" (click)="open.set(false)">Compétences</a></li>
+      <li><a href="#projects" (click)="open.set(false)">Projets</a></li>
+      <li><a href="#formation" (click)="open.set(false)">Formation</a></li>
+      <li><a href="#contact" class="contact-link" (click)="open.set(false)">Contact</a></li>
+    </ul>
+  </div>
+</nav>

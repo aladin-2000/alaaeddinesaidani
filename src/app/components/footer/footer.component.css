@@ -1,0 +1,20 @@
+footer {
+  padding: 28px 0 40px;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--slate-500);
+}
+.status { display: flex; align-items: center; gap: 7px; }
+.status i {
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: var(--green-500);
+  display: inline-block;
+}

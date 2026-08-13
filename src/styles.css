@@ -1,0 +1,120 @@
+:root {
+  /* Color tokens */
+  --ink-950: #0B1220;
+  --ink-900: #111A2E;
+  --ink-800: #182541;
+  --ink-700: #24345A;
+  --line: #263257;
+  --amber-500: #E8A33D;
+  --amber-400: #F0B860;
+  --paper-100: #EDEFF3;
+  --slate-400: #7C8BA6;
+  --slate-500: #5D6D8C;
+  --green-500: #4ADE80;
+
+  /* Type tokens */
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-body: 'IBM Plex Sans', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(ellipse 900px 520px at 50% -10%, rgba(232, 163, 61, 0.08), transparent 60%),
+    var(--ink-950);
+  color: var(--paper-100);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+main > * {
+  animation: fade-up 0.5s ease both;
+}
+main > *:nth-child(2) { animation-delay: 0.05s; }
+main > *:nth-child(3) { animation-delay: 0.1s; }
+main > *:nth-child(4) { animation-delay: 0.15s; }
+main > *:nth-child(5) { animation-delay: 0.2s; }
+main > *:nth-child(6) { animation-delay: 0.25s; }
+main > *:nth-child(7) { animation-delay: 0.3s; }
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+p { margin: 0; }
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::selection {
+  background: var(--amber-500);
+  color: var(--ink-950);
+}
+
+:focus-visible {
+  outline: 2px solid var(--amber-500);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.container {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--amber-500);
+  letter-spacing: 0.02em;
+}
+
+.tag {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--slate-400);
+  background: var(--ink-800);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 3px 9px;
+  white-space: nowrap;
+}
+
+section {
+  padding: 96px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+section:last-of-type { border-bottom: none; }
+
+@media (max-width: 640px) {
+  section { padding: 64px 0; }
+  .container { padding: 0 20px; }
+}

@@ -1,0 +1,33 @@
+<section id="projects">
+  <div class="container">
+    <h2>Projets personnels</h2>
+
+    <div class="grid">
+      @for (project of projects; track project.title) {
+        <article class="card">
+          <div class="card-head">
+            @if (project.tag) {
+              <span class="tag accent">{{ project.tag }}</span>
+            }
+            <span class="year">{{ project.year }}</span>
+          </div>
+          <h3>{{ project.title }}</h3>
+          @if (project.org) {
+            <p class="org">{{ project.org }}</p>
+          }
+          <p class="desc">{{ project.desc }}</p>
+          <ul class="points">
+            @for (p of project.points; track p) {
+              <li>{{ p }}</li>
+            }
+          </ul>
+          <div class="stack-tags">
+            @for (s of project.stack; track s) {
+              <span class="tag">{{ s }}</span>
+            }
+          </div>
+        </article>
+      }
+    </div>
+  </div>
+</section>

@@ -1,0 +1,45 @@
+<section id="experience">
+  <div class="container">
+    <h2>Expérience professionnelle</h2>
+
+    <div class="roles">
+      @for (role of roles; track role.title) {
+        <article class="role-card">
+          <div class="role-head">
+            <h3>{{ role.title }}</h3>
+            <span class="period">{{ role.period }}</span>
+          </div>
+          <p class="org">{{ role.org }}</p>
+          @if (role.points) {
+            <ul class="points">
+              @for (p of role.points; track p) {
+                <li>{{ p }}</li>
+              }
+            </ul>
+          }
+          @if (role.groups) {
+            <div class="groups">
+              @for (group of role.groups; track group.heading) {
+                <div class="group">
+                  <p class="group-heading">{{ group.heading }}</p>
+                  <ul class="points">
+                    @for (p of group.items; track p) {
+                      <li>{{ p }}</li>
+                    }
+                  </ul>
+                </div>
+              }
+            </div>
+          }
+          @if (role.stack) {
+            <div class="stack-tags">
+              @for (s of role.stack; track s) {
+                <span class="tag">{{ s }}</span>
+              }
+            </div>
+          }
+        </article>
+      }
+    </div>
+  </div>
+</section>
