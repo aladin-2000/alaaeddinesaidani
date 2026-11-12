@@ -20,7 +20,6 @@ export class ProjectsComponent {
   projects: Project[] = [
     {
       year: 'Janv. 2026 — Août 2026',
-      tag: 'mission freelance',
       title: 'MediSync — Plateforme de gestion de rendez-vous médicaux',
       org: 'Client externe — Remote, Tunis, Tunisie',
       desc: 'Développement full-stack, en autonomie pour un client externe, d\'une plateforme complète : interface médecin, interface délégué médical et back-office d\'administration.',
