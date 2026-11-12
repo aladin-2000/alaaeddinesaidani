@@ -33,7 +33,6 @@ export class ExperienceComponent {
             'Participation à la migration d\'un outil de gestion de portefeuilles vers une architecture Web en microservices, au sein d\'une équipe travaillant en méthode SCRUM',
             'Analyse approfondie d\'un système legacy complexe (logiques métier imbriquées, procédures stockées volumineuses, dépendances inter-modules)',
             'Mise en place de la CI/CD et rédaction de la documentation technique du projet',
-            'Résultat : solution aujourd\'hui utilisée par plus de 10 clients, avec de meilleures performances'
           ]
         },
         {

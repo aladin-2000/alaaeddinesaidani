@@ -20,8 +20,7 @@ export class ProjectsComponent {
   projects: Project[] = [
     {
       year: 'Janv. 2026 — Août 2026',
-      title: 'MediSync — Plateforme de gestion de rendez-vous médicaux',
-      org: 'Client externe — Remote, Tunis, Tunisie',
+      title: 'Plateforme de gestion de rendez-vous médicaux',
       desc: 'Développement full-stack, en autonomie pour un client externe, d\'une plateforme complète : interface médecin, interface délégué médical et back-office d\'administration.',
       points: [
         'Authentification & autorisation via Spring Security et JWT, gestion des rôles (médecin, délégué, administrateur, laboratoire)',
