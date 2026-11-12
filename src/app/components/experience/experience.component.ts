@@ -28,34 +28,48 @@ export class ExperienceComponent {
       org: 'Linedata — Tunis, Tunisie',
       groups: [
         {
-          heading: 'Migration d\'un progiciel financier vers une architecture microservices',
+          heading: 'Migration d\'un progiciel financier vers une architecture multi-modules',
           items: [
-            'Participation à la migration d\'un outil de gestion de portefeuilles vers une architecture Web en microservices, au sein d\'une équipe travaillant en méthode SCRUM',
-            'Analyse approfondie d\'un système legacy complexe (logiques métier imbriquées, procédures stockées volumineuses, dépendances inter-modules)',
-            'Mise en place de la CI/CD et rédaction de la documentation technique du projet',
+            'Analyse d\'un système legacy complexe : logiques métier imbriquées, procédures stockées et dépendances inter-modules, afin de garantir la reprise fidèle des règles métier',
+            'Refonte et développement de plusieurs écrans de la nouvelle application Web, au sein d\'une équipe travaillant en méthode SCRUM',
+            'Implémentation et gestion des mécanismes XSPE pour le contrôle dynamique des accès et des fonctionnalités'
           ]
         },
         {
-          heading: 'Générateur XML et automatisation de génération des écrans',
+          heading: 'Maintenance corrective — Produit EKIP360',
           items: [
-            'Conception et développement d\'un générateur de fichiers XML basé sur les définitions de l\'application Desktop',
-            'Automatisation de la configuration des écrans Web compatibles avec le framework 360',
-            'Implémentation et gestion des mécanismes XSPE pour le contrôle dynamique des accès et des fonctionnalités'
+            'Intervention sur le produit EKIP360 : traitement des tickets Jira remontés par les clients, de l\'analyse jusqu\'à la livraison du correctif',
+            'Reproduction des bugs en environnement de test, analyse des logs et debugging côté back-end et front-end'
           ]
         }
       ],
-      stack: ['Java 17', 'Spring Boot', 'Microservices', 'REST API', 'Angular 16', 'Sybase', 'GitLab CI/CD', 'Confluence']
+      stack: ['Java 17', 'Spring', 'Sybase', 'Jira', 'SCRUM']
     },
     {
       period: 'Fév. 2024 — Août 2024',
-      title: 'Développeur Full Stack (PFE)',
+      title: 'Stage PFE : Développeur Full Stack',
       org: 'Linedata — Tunis, Tunisie',
-      points: [
-        'Migration d\'un module de reporting financier depuis une application Desktop vers une architecture Web basée sur Spring, en assurant la reprise des règles métier et la cohérence des données',
-        'Développement de jobs Talend pour le nettoyage (doublons, valeurs manquantes), la transformation et la normalisation des données',
-        'Mise en place de flux ETL permettant de produire des données fiables et exploitables pour la génération de rapports'
+      groups: [
+        {
+          heading: 'Sujet : Conception et développement d\'un générateur de code',
+          items: [
+            'Mise en place d\'un pipeline ETL via Talend pour extraire les éléments structurels d\'une application Desktop, les transformer puis les charger dans des templates de code',
+            'Génération automatique d\'une partie du code de l\'application Web, permettant une réduction significative du temps de développement',
+            'Conception et développement d\'un générateur de fichiers XML basé sur les définitions de l\'application Desktop',
+            'Automatisation de la configuration des écrans Web compatibles avec le framework 360'
+
+          ]
+        }
       ],
-      stack: ['Java', 'Spring Boot', 'Talend', 'ETL', 'Sybase']
+      stack: ['Java', 'Talend', 'ETL']
+    },
+    {
+      period: 'Juil. 2022',
+      title: 'Stage d\'été — Ingénieur Réseau',
+      org: 'Tunisie Télécom — Tunis, Tunisie',
+      points: [
+        'Tests de connectivité et vérification du bon fonctionnement du réseau, en appui aux équipes techniques'
+      ]
     }
   ];
 }
